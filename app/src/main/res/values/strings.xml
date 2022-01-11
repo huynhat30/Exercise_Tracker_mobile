@@ -1,0 +1,7 @@
+<resources>
+    <!-- Name of the application -->
+    <string name="app_name">ExerciseTracking</string>
+
+    <!-- API key for Google Map -->
+    <string name="google_maps_key_version" templateMergeStrategy="preserve" translatable="false">AIzaSyBNY2zTuTAxmRd5kQq-pagAerr2aKGTKeY</string>
+</resources>

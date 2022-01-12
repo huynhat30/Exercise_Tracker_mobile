@@ -5,48 +5,34 @@
     <!-- API key for Google Map -->
     <string name="google_maps_key_version" templateMergeStrategy="preserve" translatable="false">AIzaSyBNY2zTuTAxmRd5kQq-pagAerr2aKGTKeY</string>
 
+    <!--StartUp fragment strings -->
+    <string name="welcome_to_tracker_startup">Welcome to Tracker</string>
+    <string name="continue_startup">Continue</string>
+
     <!--Statistic Fragment Strings -->
     <string name="total_distance">Total Distance</string>
-    <string name="distanceStart">0km</string>
+    <string name="distanceStat">0km</string>
     <string name="total_time">Total Time</string>
-    <string name="timeStart">00:00:00</string>
-    <string name="total_calories_burned">Total Calories Burned</string>
-    <string name="calorStart">0kcal</string>
+    <string name="timeStat">00:00:00</string>
+    <string name="total_calories_burned">Calories Burned</string>
+    <string name="calorStat">0kcal</string>
     <string name="average_speed">Average Speed</string>
-    <string name="speedStart">0km/h</string>
+    <string name="speedStat">0km/h</string>
 
-    <!--Running Fragment Strings -->
-    <string name="sort_by">Sort by:</string>
-
-    <!--Start up Fragment Strings -->
-    <string name="user_name">Your Name</string>
-    <string name="log_in">Log in</string>
-
-    <!--Bottom menu strings -->
-    <string name="walk_title_bottomNav">Walking</string>
-    <string name="run_title_bottomNav">Running</string>
-    <string name="stat_title_bottomNav">Stat</string>
-    <string name="setting_title_bottomNav">Setting</string>
-
-
-    <string name="your_name_startup">Your Name</string>
-    <string name="continue_startup">Continue</string>
-    <string name="welcome_to_tracker_startup">Welcome to Tracker</string>
-    <string name="app_name_main_activity">Tracker</string>
-    <string name="run_tracking_time">00:00:00:00</string>
-    <string name="start_button">Start</string>
-    <string name="finish_run_button">Finish Run</string>
-    <string name="back_button">Back</string>
-    <string name="step_count_title">Step:</string>
-    <string name="step_count">0</string>
-
+    <!--Walking Fragment Strings -->
+    <string name="sort_by_walk">Sort by:</string>
     <string-array name="filter_options_walk">
         <item>Date</item>
         <item>Walking Time</item>
         <item>Distance</item>
-        <item>step</item>
+        <item>Step</item>
     </string-array>
+    <!--Running Tracking Fragment Strings -->
+    <string name="step_count_title">Step:</string>
+    <string name="step_count">0</string>
 
+    <!--Running Fragment Strings -->
+    <string name="sort_by_run">Sort by:</string>
     <string-array name="filter_options_run">
         <item>Date</item>
         <item>Running Time</item>
@@ -54,5 +40,21 @@
         <item>Average Speed</item>
         <item>Calories Burned</item>
     </string-array>
+    <!--Running Tracking Fragment Strings -->
+    <string name="run_tracking_time">00:00:00:00</string>
+
+    <!--Bottom menu strings -->
+    <string name="walk_title_bottomNav">Walking</string>
+    <string name="run_title_bottomNav">Running</string>
+    <string name="stat_title_bottomNav">Stat</string>
+    <string name="setting_title_bottomNav">Setting</string>
+
+    <!-- Tracking button strings -->
+    <string name="start_button">Start</string>
+    <string name="finish_run_button">Finish</string>
+    <string name="back_button">Back</string>
+    <string name="total_step">Total Steps</string>
+    <string name="stepSum">0</string>
+
 
 </resources>

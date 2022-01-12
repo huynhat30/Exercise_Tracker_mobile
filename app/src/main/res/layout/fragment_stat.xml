@@ -7,116 +7,109 @@
     android:padding="16dp">
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/totalCalories"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:text="@string/calorStart"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/totalCaloriesInfo"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintHorizontal_bias="0.702"
+        android:id="@+id/avgSpeedInfo2"
+        android:layout_width="195dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="188dp"
+        android:text="@string/total_step"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/totalDistanceInfo"
+        android:id="@+id/totalCalories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:text="@string/calorStat"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/avgSpeed2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.025"
+        app:layout_constraintStart_toStartOf="@+id/guideline2" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/totalDistanceInfo"
+        android:layout_width="175dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="4dp"
         android:text="@string/total_distance"
-        app:layout_constraintBottom_toTopOf="@+id/avgSpeedInfo"
-        app:layout_constraintEnd_toEndOf="@+id/totalDistance"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/totalDistance"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/totalCaloriesInfo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.279"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintVertical_bias="0.683" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/totalDistance"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:text="@string/distanceStart"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/totalDistanceInfo"
+        android:text="@string/distanceStat"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/totalCalories"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/stepTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="196dp"
+        android:text="@string/stepSum"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/totalTime"
+        android:id="@+id/avgSpeed2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="4dp"
-        android:text="@string/timeStart"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/totalTimeInfo"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintHorizontal_bias="0.865"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/totalTimeInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/total_time"
-        app:layout_constraintBottom_toTopOf="@+id/totalCaloriesInfo"
-        app:layout_constraintEnd_toEndOf="@+id/totalTime"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/totalTime"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.666" />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/avgSpeed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:text="@string/speedStart"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toTopOf="@+id/avgSpeedInfo"
+        android:text="@string/speedStat"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/stepTotal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintHorizontal_bias="0.019"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.966" />
+        app:layout_constraintVertical_bias="0.86" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/totalCaloriesInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="187dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="48dp"
         android:text="@string/total_calories_burned"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toEndOf="@+id/totalCalories"
-        app:layout_constraintHorizontal_bias="0.641"
-        app:layout_constraintStart_toStartOf="@+id/totalCalories"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.722" />
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/avgSpeedInfo"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/avgSpeedInfo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="195dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="276dp"
         android:text="@string/average_speed"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
-        app:layout_constraintEnd_toEndOf="@+id/avgSpeed"
-        app:layout_constraintHorizontal_bias="0.59"
-        app:layout_constraintStart_toStartOf="@+id/avgSpeed"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.72" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.7017784" />
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.5" />
+        app:layout_constraintGuide_begin="206dp" />
 
 
 

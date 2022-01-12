@@ -34,7 +34,7 @@
 
         <!-- Navigation service: getting location-->
         <service
-            android:name="MyNavigationServices"
+            android:name=".service.TrackerService"
             android:foregroundServiceType="location" >
         </service>
 

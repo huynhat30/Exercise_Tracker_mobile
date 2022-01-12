@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/clInnerLayout"
+        android:id="@+id/lowerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@color/redApp"
@@ -40,7 +40,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnToggleRun"
+            android:id="@+id/startWalkBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="124dp"
@@ -53,7 +53,7 @@
             app:layout_constraintVertical_bias="1.0" />
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/btnFinishRun"
+            android:id="@+id/finishWalkBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/finish_run_button"
@@ -61,7 +61,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/btnToggleRun" />
+            app:layout_constraintStart_toEndOf="@+id/startWalkBtn" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/backBtn"
@@ -72,7 +72,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnToggleRun"
+            app:layout_constraintTop_toBottomOf="@+id/startWalkBtn"
             app:layout_constraintVertical_bias="0.13" />
 
 
@@ -82,7 +82,7 @@
         android:id="@+id/mapView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/clInnerLayout"
+        app:layout_constraintBottom_toTopOf="@+id/lowerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

@@ -4,6 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidTrackingApp/mainApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/drawable/ic_add_black.xml" value="0.2212962962962963" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_running.xml" value="0.33" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_setting.xml" value="0.1" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_startPage.xml" value="0.1" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_stat.xml" value="0.1" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_tacking.xml" value="0.1" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_walking.xml" value="0.1" />
       </map>
     </option>
   </component>

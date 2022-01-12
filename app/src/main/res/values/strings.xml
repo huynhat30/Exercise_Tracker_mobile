@@ -4,4 +4,23 @@
 
     <!-- API key for Google Map -->
     <string name="google_maps_key_version" templateMergeStrategy="preserve" translatable="false">AIzaSyBNY2zTuTAxmRd5kQq-pagAerr2aKGTKeY</string>
+
+    <!--Statistic Fragment Strings -->
+    <string name="total_distance">Total Distance</string>
+    <string name="distanceStart">0km</string>
+    <string name="total_time">Total Time</string>
+    <string name="timeStart">00:00:00</string>
+    <string name="total_calories_burned">Total Calories Burned</string>
+    <string name="calorStart">0kcal</string>
+    <string name="average_speed">Average Speed</string>
+    <string name="speedStart">0km/h</string>
+
+    <!--Running Fragment Strings -->
+    <string name="sort_by">Sort by:</string>
+
+    <!--Setting Fragment Strings -->
+    <string name="user_name">Your Name</string>
+    <string name="log_in">Log in</string>
+
+
 </resources>

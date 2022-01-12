@@ -4,7 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.room.*
 
 @Dao
-interface dataRecordDAO {
+interface DataRecordDAO {
 
     // Method: Replace the old exercise with new one
     @Insert(onConflict = OnConflictStrategy.REPLACE)
@@ -14,7 +14,7 @@ interface dataRecordDAO {
     @Delete
     suspend fun deleteExercise(run: PhysActivity)
 
-    // Methods: get data sorted by table properties  in descending order
+    // Methods: get data sorted by table properties
     @Query("SELECT * FROM physAct_table ORDER BY dateRecord DESC")
     fun getAllExercisesSortedByDate(): LiveData<List<PhysActivity>>
 
@@ -30,7 +30,11 @@ interface dataRecordDAO {
     @Query("SELECT * FROM physAct_table ORDER BY avgVelKMH DESC")
     fun getAllExercisesSortedBySpeed(): LiveData<List<PhysActivity>>
 
-    @Query("SELECT * FROM physAct_table ORDER BY avgVelKMH DESC")
-    fun getAllExercisesSortedBySped(): LiveData<List<PhysActivity>>
+    // Methods: get Sum of some properties
+    @Query("SELECT SUM(estCalor) FROM physAct_table")
+    fun getSumOfBurnedCalor(): LiveData<Long>
+
+    @Query("SELECT SUM(latitudeMeter) FROM physAct_table")
+    fun getSumOfDoneDistance(): LiveData<Long>
 
 }

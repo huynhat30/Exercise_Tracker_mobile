@@ -4,13 +4,33 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidTrackingApp/mainApp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/drawable-v24/ic_run.xml" value="0.13703703703703704" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/drawable/bottom_nav_selector.xml" value="0.32708333333333334" />
         <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/drawable/ic_add_black.xml" value="0.2212962962962963" />
-        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_running.xml" value="0.33" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/drawable/ic_close_white.xml" value="0.403125" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/drawable/ic_delete.xml" value="0.403125" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/drawable/ic_directions_run_black_24dp.xml" value="0.403125" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/drawable/ic_graph.xml" value="0.403125" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/drawable/ic_launcher_background.xml" value="0.403125" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/drawable/ic_run_icon.xml" value="0.1" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/drawable/ic_setting_icon.xml" value="0.403125" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/drawable/ic_stat_icon.xml" value="0.403125" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/drawable/ic_walk_icon.xml" value="0.23148148148148148" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/drawable/nav_control_center.xml" value="0.403125" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_run.xml" value="0.38697916666666665" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_running.xml" value="0.25" />
         <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_setting.xml" value="0.1" />
         <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_startPage.xml" value="0.1" />
-        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_stat.xml" value="0.1" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_startup.xml" value="0.33" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_stat.xml" value="0.33" />
         <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_tacking.xml" value="0.1" />
-        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_walking.xml" value="0.1" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_tracking.xml" value="0.38697916666666665" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_tracking_run.xml" value="0.18819655521783182" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/layout/fragment_walking.xml" value="0.25" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/menu/bottom_menu.xml" value="0.33" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/menu/bottom_nav_menu.xml" value="0.38697916666666665" />
+        <entry key="..\:/GITHUB/ExerciseTrackerCOMP/app/src/main/res/menu/nav_bottom.xml" value="0.38697916666666665" />
       </map>
     </option>
   </component>

@@ -18,9 +18,35 @@
     <!--Running Fragment Strings -->
     <string name="sort_by">Sort by:</string>
 
-    <!--Setting Fragment Strings -->
+    <!--Start up Fragment Strings -->
     <string name="user_name">Your Name</string>
     <string name="log_in">Log in</string>
 
+    <!--Bottom menu strings -->
+    <string name="walk_title_bottomNav">Walking</string>
+    <string name="run_title_bottomNav">Running</string>
+    <string name="stat_title_bottomNav">Stat</string>
+    <string name="setting_title_bottomNav">Setting</string>
+
+
+    <string name="your_name_startup">Your Name</string>
+    <string name="continue_startup">Continue</string>
+    <string name="welcome_to_tracker_startup">Welcome to Tracker</string>
+    <string name="app_name_main_activity">Tracker</string>
+
+    <string-array name="filter_options_walk">
+        <item>Date</item>
+        <item>Walking Time</item>
+        <item>Distance</item>
+        <item>step</item>
+    </string-array>
+
+    <string-array name="filter_options_run">
+        <item>Date</item>
+        <item>Running Time</item>
+        <item>Distance</item>
+        <item>Average Speed</item>
+        <item>Calories Burned</item>
+    </string-array>
 
 </resources>

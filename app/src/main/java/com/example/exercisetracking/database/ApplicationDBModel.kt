@@ -11,5 +11,6 @@ import androidx.room.TypeConverters
 
 @TypeConverters(PropertyDBConverter::class)
 abstract class ApplicationDBModel: RoomDatabase() {
+
     abstract fun getDataRecordDAO(): DataRecordDAO
 }

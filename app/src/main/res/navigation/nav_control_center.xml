@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_map"
+    app:startDestination="@id/startUpFragment">
+
+    <fragment
+        android:id="@+id/runningFragment"
+        android:name="com.example.exercisetracking.UI.Fragments.RunningFragment"
+        android:label="RunningFragment" >
+        <action
+            android:id="@+id/action_runningFragment_to_trackingFragment"
+            app:destination="@id/trackingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startUpFragment"
+        android:name="com.example.exercisetracking.UI.Fragments.StartUpFragment"
+        android:label="StartUpFragment" >
+        <action
+            android:id="@+id/action_startUpFragment_to_runningFragment"
+            app:destination="@id/runningFragment" />
+        <action
+            android:id="@+id/action_startUpFragment_to_walkingFragment"
+            app:destination="@id/walkingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statFragment"
+        android:name="com.example.exercisetracking.UI.Fragments.StatFragment"
+        android:label="StatFragment" />
+    <fragment
+        android:id="@+id/trackingFragment"
+        android:name="com.example.exercisetracking.UI.Fragments.TrackingFragment"
+        android:label="TrackingFragment" >
+        <action
+            android:id="@+id/action_trackingFragment_to_runningFragment"
+            app:destination="@id/runningFragment" />
+        <action
+            android:id="@+id/action_trackingFragment_to_walkingFragment"
+            app:destination="@id/walkingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/walkingFragment"
+        android:name="com.example.exercisetracking.UI.Fragments.WalkingFragment"
+        android:label="WalkingFragment" >
+        <action
+            android:id="@+id/action_walkingFragment_to_trackingFragment"
+            app:destination="@id/trackingFragment" />
+    </fragment>
+</navigation>

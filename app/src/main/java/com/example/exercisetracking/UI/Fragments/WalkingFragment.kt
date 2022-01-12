@@ -24,7 +24,7 @@ class WalkingFragment: Fragment(R.layout.fragment_walking ), EasyPermissions.Per
         super.onViewCreated(view, savedInstanceState)
         requestPermission()
         fab.setOnClickListener{
-            findNavController().navigate(R.id.action_runningFragment_to_trackingFragment)
+            findNavController().navigate(R.id.action_walkingFragment_to_trackingFragment)
         }
     }
 

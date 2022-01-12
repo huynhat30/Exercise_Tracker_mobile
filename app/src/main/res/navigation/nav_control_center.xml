@@ -9,8 +9,8 @@
         android:name="com.example.exercisetracking.UI.Fragments.RunningFragment"
         android:label="RunningFragment" >
         <action
-            android:id="@+id/action_runningFragment_to_trackingFragment"
-            app:destination="@id/trackingFragment" />
+            android:id="@+id/action_runningFragment_to_runTrackingFragment"
+            app:destination="@id/runTrackingFragment" />
     </fragment>
     <fragment
         android:id="@+id/startUpFragment"
@@ -32,9 +32,6 @@
         android:name="com.example.exercisetracking.UI.Fragments.TrackingFragment"
         android:label="TrackingFragment" >
         <action
-            android:id="@+id/action_trackingFragment_to_runningFragment"
-            app:destination="@id/runningFragment" />
-        <action
             android:id="@+id/action_trackingFragment_to_walkingFragment"
             app:destination="@id/walkingFragment" />
     </fragment>
@@ -45,5 +42,13 @@
         <action
             android:id="@+id/action_walkingFragment_to_trackingFragment"
             app:destination="@id/trackingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/runTrackingFragment"
+        android:name="com.example.exercisetracking.UI.Fragments.RunTrackingFragment"
+        android:label="RunTrackingFragment" >
+        <action
+            android:id="@+id/action_runTrackingFragment_to_runningFragment"
+            app:destination="@id/runningFragment" />
     </fragment>
 </navigation>

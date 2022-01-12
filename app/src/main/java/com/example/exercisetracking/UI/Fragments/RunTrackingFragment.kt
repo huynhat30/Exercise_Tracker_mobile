@@ -11,7 +11,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_tracking_run.*
 
 @AndroidEntryPoint // inject request data from Database through Dagger Hilt into Fragment
-class TrackingFragment: Fragment(R.layout.fragment_tracking_walk ) {
+class RunTrackingFragment: Fragment(R.layout.fragment_tracking_run ) {
     private val viewModel : AppViewModel by viewModels()
 
     private var map: GoogleMap? = null

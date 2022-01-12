@@ -33,6 +33,12 @@
     <string name="continue_startup">Continue</string>
     <string name="welcome_to_tracker_startup">Welcome to Tracker</string>
     <string name="app_name_main_activity">Tracker</string>
+    <string name="run_tracking_time">00:00:00:00</string>
+    <string name="start_button">Start</string>
+    <string name="finish_run_button">Finish Run</string>
+    <string name="back_button">Back</string>
+    <string name="step_count_title">Step:</string>
+    <string name="step_count">0</string>
 
     <string-array name="filter_options_walk">
         <item>Date</item>

@@ -51,4 +51,12 @@
             android:id="@+id/action_runTrackingFragment_to_runningFragment"
             app:destination="@id/runningFragment" />
     </fragment>
+
+    <action android:id="@+id/action_to_Running_Tacking"
+        app:destination="@+id/runTrackingFragment"
+        app:launchSingleTop="true"/>
+
+    <action android:id="@+id/action_to_Waling_Tacking"
+        app:destination="@+id/trackingFragment"
+        app:launchSingleTop="true"/>
 </navigation>

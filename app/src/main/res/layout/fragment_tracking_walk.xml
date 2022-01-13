@@ -39,18 +39,7 @@
             app:layout_constraintStart_toEndOf="@+id/stepTitle"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/startWalkBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="124dp"
-            android:text="@string/start_button"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/step_count"
-            app:layout_constraintVertical_bias="1.0" />
+
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/finishWalkBtn"
@@ -60,8 +49,7 @@
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/startWalkBtn" />
+            app:layout_constraintHorizontal_bias="0.5" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/backBtn"
@@ -72,8 +60,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/startWalkBtn"
-            app:layout_constraintVertical_bias="0.13" />
+            app:layout_constraintTop_toBottomOf="@+id/stepTitle"
+            app:layout_constraintVertical_bias="0.448" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

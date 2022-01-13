@@ -1,5 +1,6 @@
 package com.example.exercisetracking.database.repo
 
+import androidx.lifecycle.LiveData
 import com.example.exercisetracking.database.DataRecordDAO
 import com.example.exercisetracking.database.PhysActivity
 import javax.inject.Inject
@@ -11,18 +12,31 @@ class MainRepo @Inject constructor(val actDao: DataRecordDAO) {
 
     suspend fun deleteAct(act: PhysActivity) = actDao.deleteExercise(act)
 
-    fun getAllExercisesSortedByDate() = actDao.getAllExercisesSortedByDate()
+    fun getAllRunSortedByDate() = actDao.getAllRunSortedByDate()
 
-    fun getAllExercisesSortedByType() = actDao.getAllExercisesSortedByType()
+    fun getAllRunSortedByTime() = actDao.getAllRunSortedByTime()
 
-    fun getAllExercisesSortedByTime() = actDao.getAllExercisesSortedByTime()
+    fun getAllRunSortedByDistance() = actDao.getAllRunSortedByDistance()
 
-    fun getAllExercisesSortedByDistance() = actDao.getAllExercisesSortedByDistance()
+    fun getAllRunSortedBySpeed() = actDao.getAllRunSortedBySpeed()
 
-    fun getAllExercisesSortedBySpeed() = actDao.getAllExercisesSortedBySpeed()
+
+
+    fun getAllWalkSortedByDate() = actDao.getAllWalkSortedByDate()
+
+    fun getAllWalkSortedByTime() = actDao.getAllWalkSortedByTime()
+
+    fun getAllWalkSortedByDistance() = actDao.getAllWalkSortedByDistance()
+
+    fun getAllWalkSortedByStep() = actDao.getAllWalkSortedByStep()
+
+
 
     fun getSumOfBurnedCalor() = actDao.getSumOfBurnedCalor()
 
     fun getSumOfDoneDistance() = actDao.getSumOfDoneDistance()
+
+    fun getSumOfStep() = actDao.getSumOfStep()
+
 
 }

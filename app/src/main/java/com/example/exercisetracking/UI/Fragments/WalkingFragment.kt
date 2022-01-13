@@ -7,12 +7,12 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
-import com.example.exercisetracking.Contants.CODE_LOCATION_PERMISSION_REQUAEST
+import com.example.exercisetracking.Contants.CODE_LOCATION_PERMISSION_REQUEST
 import com.example.exercisetracking.R
 import com.example.exercisetracking.UI.AppViewModel
 import com.example.exercisetracking.UI.tracking.permissionTracking
 import dagger.hilt.android.AndroidEntryPoint
-import kotlinx.android.synthetic.main.fragment_running.*
+import kotlinx.android.synthetic.main.fragment_walking.*
 import pub.devrel.easypermissions.AppSettingsDialog
 import pub.devrel.easypermissions.EasyPermissions
 
@@ -23,7 +23,7 @@ class WalkingFragment: Fragment(R.layout.fragment_walking ), EasyPermissions.Per
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         requestPermission()
-        fab.setOnClickListener{
+        ViewStrep.setOnClickListener{
             findNavController().navigate(R.id.action_walkingFragment_to_trackingFragment)
         }
     }
@@ -37,11 +37,11 @@ class WalkingFragment: Fragment(R.layout.fragment_walking ), EasyPermissions.Per
 
         // check if user has not accepted permission -> check android version -> ask for permission
         if(Build.VERSION.SDK_INT < Build.VERSION_CODES.Q){
-            EasyPermissions.requestPermissions(this, "Accept location permission before using this app", CODE_LOCATION_PERMISSION_REQUAEST,
+            EasyPermissions.requestPermissions(this, "Accept location permission before using this app", CODE_LOCATION_PERMISSION_REQUEST,
             Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION)
         }
         else{
-            EasyPermissions.requestPermissions(this, "Accept location permission before using this app", CODE_LOCATION_PERMISSION_REQUAEST,
+            EasyPermissions.requestPermissions(this, "Accept location permission before using this app", CODE_LOCATION_PERMISSION_REQUEST,
                 Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_COARSE_LOCATION, Manifest.permission.ACCESS_BACKGROUND_LOCATION)
         }
     }

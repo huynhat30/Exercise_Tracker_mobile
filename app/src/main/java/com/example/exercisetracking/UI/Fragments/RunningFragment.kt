@@ -18,7 +18,7 @@ class RunningFragment: Fragment(R.layout.fragment_running ) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        fab.setOnClickListener{
+        startYourRun.setOnClickListener{
             findNavController().navigate(R.id.action_runningFragment_to_runTrackingFragment)
         }
     }

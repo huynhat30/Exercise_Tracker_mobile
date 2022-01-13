@@ -2,6 +2,11 @@ package com.example.exercisetracking.service
 
 import java.util.concurrent.TimeUnit
 
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ */
 object TimerConverter {
 
     //Method: get the current time in millisecond then convert to hour/minutes/seconds format

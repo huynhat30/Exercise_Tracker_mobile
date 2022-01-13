@@ -12,6 +12,11 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_stat.*
 import kotlin.math.round
 
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ * */
 @AndroidEntryPoint // inject request data through Dagger Hilt into Fragment
 class StatFragment: Fragment(R.layout.fragment_stat ) {
 

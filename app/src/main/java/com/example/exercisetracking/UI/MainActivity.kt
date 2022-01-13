@@ -15,6 +15,13 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
 
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ *
+ * Class describe: control of Main Activity
+ * */
 @AndroidEntryPoint // This activity contains all fragments that exchange data with Database
 class MainActivity : AppCompatActivity() {
 

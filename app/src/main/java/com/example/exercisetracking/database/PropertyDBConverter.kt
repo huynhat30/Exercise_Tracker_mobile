@@ -6,6 +6,12 @@ import androidx.room.TypeConverter
 import androidx.room.TypeConverters
 import java.io.ByteArrayOutputStream
 
+
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ */
 object PropertyDBConverter {
 
     // Method: convert Bitmap value(such sa image) to bytes for saving into DB

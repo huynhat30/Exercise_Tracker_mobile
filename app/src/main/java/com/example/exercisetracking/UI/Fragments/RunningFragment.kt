@@ -15,6 +15,11 @@ import com.example.exercisetracking.adapter.ActAdapter
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_running.*
 
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ */
 @AndroidEntryPoint // inject request data through Dagger Hilt into Fragment
 class RunningFragment: Fragment(R.layout.fragment_running ) {
 

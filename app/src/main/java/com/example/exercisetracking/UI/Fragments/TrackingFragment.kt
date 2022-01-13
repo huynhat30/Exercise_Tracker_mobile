@@ -21,6 +21,12 @@ import com.google.android.gms.maps.GoogleMap
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_tracking_run.*
 
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ */
+
 @AndroidEntryPoint // inject request data from Database through Dagger Hilt into Fragment
 class TrackingFragment: Fragment(R.layout.fragment_tracking_walk ), SensorEventListener {
     private val viewModel : AppViewModel by viewModels()

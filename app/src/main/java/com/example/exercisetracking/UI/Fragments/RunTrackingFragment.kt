@@ -29,6 +29,11 @@ import kotlinx.android.synthetic.main.fragment_tracking_run.*
 import java.util.*
 import kotlin.math.round
 
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ */
 @AndroidEntryPoint // inject request data from Database through Dagger Hilt into Fragment
 class RunTrackingFragment: Fragment(R.layout.fragment_tracking_run ) {
     private val viewModel : AppViewModel by viewModels()

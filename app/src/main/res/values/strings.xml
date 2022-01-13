@@ -11,13 +11,13 @@
 
     <!--Statistic Fragment Strings -->
     <string name="total_distance">Total Distance</string>
-    <string name="distanceStat">0km</string>
+    <string name="distanceStat">5km</string>
     <string name="total_time">Total Time</string>
-    <string name="timeStat">00:00:00</string>
+    <string name="timeStat">01:32:24</string>
     <string name="total_calories_burned">Calories Burned</string>
-    <string name="calorStat">0kcal</string>
+    <string name="calorStat">10kcal</string>
     <string name="average_speed">Average Speed</string>
-    <string name="speedStat">0km/h</string>
+    <string name="speedStat">30km/h</string>
 
     <!--Walking Fragment Strings -->
     <string name="sort_by_walk">Sort by:</string>

@@ -14,6 +14,11 @@ import kotlinx.android.synthetic.main.item_act_run.view.*
 import java.text.SimpleDateFormat
 import java.util.*
 
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ */
 class ActAdapter : RecyclerView.Adapter<ActAdapter.ActViewHolder>() {
     inner class ActViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView)
 

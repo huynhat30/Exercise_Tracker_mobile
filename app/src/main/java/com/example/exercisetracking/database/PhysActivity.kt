@@ -4,7 +4,13 @@ import android.graphics.Bitmap
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-// Create table in database
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ *
+ * Class: Create table in database
+ * */
 @Entity(tableName = "physAct_table")
 data class PhysActivity (
 

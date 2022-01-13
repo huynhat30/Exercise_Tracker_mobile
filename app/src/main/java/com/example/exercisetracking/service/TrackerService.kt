@@ -44,6 +44,13 @@ import javax.inject.Inject
 typealias Polyline = MutableList<LatLng>
 typealias Polylines = MutableList<Polyline>
 
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ *
+ * Class: Handle service for tracking
+ */
 @AndroidEntryPoint
 class TrackerService : LifecycleService(){
 

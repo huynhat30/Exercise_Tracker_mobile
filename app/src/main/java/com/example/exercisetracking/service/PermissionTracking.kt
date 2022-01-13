@@ -7,7 +7,11 @@ import android.os.Build
 import com.example.exercisetracking.service.Polyline
 import pub.devrel.easypermissions.EasyPermissions
 
-
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ */
 object permissionTracking {
 
     // Method: in case the device has had the location permission ->

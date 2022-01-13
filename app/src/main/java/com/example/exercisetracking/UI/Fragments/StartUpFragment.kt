@@ -7,6 +7,11 @@ import androidx.navigation.fragment.findNavController
 import com.example.exercisetracking.R
 import kotlinx.android.synthetic.main.fragment_startup.*
 
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ */
 class StartUpFragment: Fragment(R.layout.fragment_startup ) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

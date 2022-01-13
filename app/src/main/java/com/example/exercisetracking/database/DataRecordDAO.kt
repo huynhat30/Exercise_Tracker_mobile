@@ -3,6 +3,13 @@ package com.example.exercisetracking.database
 import androidx.lifecycle.LiveData
 import androidx.room.*
 
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ *
+ * Class: Data Access Objects
+ */
 @Dao
 interface DataRecordDAO {
 

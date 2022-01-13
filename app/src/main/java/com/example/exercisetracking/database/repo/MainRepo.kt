@@ -5,7 +5,14 @@ import com.example.exercisetracking.database.DataRecordDAO
 import com.example.exercisetracking.database.PhysActivity
 import javax.inject.Inject
 
-// read and temporary save requested data from Database, connect between viewmodel and database
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ *
+ * class: read and temporary save requested data from Database, connect between viewmodel and database
+ */
+
 class MainRepo @Inject constructor(val actDao: DataRecordDAO) {
 
     suspend fun insertAct(act: PhysActivity) = actDao.insertExercise(act)

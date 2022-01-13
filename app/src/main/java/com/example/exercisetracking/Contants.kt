@@ -1,5 +1,10 @@
 package com.example.exercisetracking
 
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ * */
 object Contants {
 
     const val ACTIVITY_DATABASE_NAME = "physAct_table"

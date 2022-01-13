@@ -16,6 +16,11 @@ import kotlinx.android.synthetic.main.fragment_walking.*
 import pub.devrel.easypermissions.AppSettingsDialog
 import pub.devrel.easypermissions.EasyPermissions
 
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ * */
 @AndroidEntryPoint // inject request data through Dagger Hilt into Fragment
 class WalkingFragment: Fragment(R.layout.fragment_walking ), EasyPermissions.PermissionCallbacks{
     private val viewModel : AppViewModel by viewModels()

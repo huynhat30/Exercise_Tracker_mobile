@@ -7,7 +7,13 @@ import com.example.exercisetracking.database.PhysActivity
 import com.example.exercisetracking.database.repo.MainRepo
 import kotlinx.coroutines.launch
 
-//collect the data from the repo and provide to all fragments/activities
+/**
+ * Created by Nhat Huy Giang
+ * Stydent ID: 20313345
+ * Email: psyng1@nottingham.ac.uk
+ *
+ * Class describe: This class collect the data from the repo and provide to all fragments/activities
+ * */
 class WalkViewModel @ViewModelInject constructor(val mainRepo : MainRepo) : ViewModel() {
     val walkSortedBydate = mainRepo.getAllWalkSortedByDate()
     val walkSortedByTime = mainRepo.getAllWalkSortedByTime()

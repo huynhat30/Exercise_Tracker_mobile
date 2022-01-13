@@ -18,6 +18,7 @@ import androidx.core.app.NotificationCompat
 import androidx.lifecycle.LifecycleService
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
+import com.example.exercisetracking.Contants.CHANNEL_ID
 import com.example.exercisetracking.Contants.PAUSE_SERVICE_ACTION
 import com.example.exercisetracking.Contants.RUNNING_TRACKING_FRAGMENT
 import com.example.exercisetracking.Contants.START_RESUME_SERVICE_ACTION
@@ -32,23 +33,27 @@ import com.google.android.gms.location.LocationRequest
 import com.google.android.gms.location.LocationRequest.PRIORITY_HIGH_ACCURACY
 import com.google.android.gms.location.LocationResult
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.LatLngBounds
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
 typealias Polyline = MutableList<LatLng>
 typealias Polylines = MutableList<Polyline>
 
+@AndroidEntryPoint
 class TrackerService : LifecycleService(){
 
-    private val CHANNEL_ID = "tracking_channel"
     private val CHANNEL_NAME = "Tracking"
     private val NOTIFICATION_ID = 1
     private val UPDATE_LOCATION_INTERVAL = 5000L // each 5 seconds update 1 time
     private val FASTEST_LOCATION_INTERVAL = 2000L // the lowest possible interval to update location
     private val timeInSeconds = MutableLiveData<Long>() // recorded time in second
 
+    private var serviceKilled = false
     private var fisrtRun = true //Boolen if is that first run
     private var isTimerEnable = false // Boolen if timer is enabled
     private var lapTime = 0L //initial time
@@ -57,7 +62,11 @@ class TrackerService : LifecycleService(){
     private var lastSecondTimeStamp = 0L // Last whole second value passed in millisecond
 
     // request location update provide by Google
+    @Inject
     lateinit var fusedLocationProviderClient: FusedLocationProviderClient
+
+    @Inject
+    lateinit var baseNotificationBuilder: NotificationCompat.Builder
 
     // Object for background tracking
     companion object {
@@ -91,6 +100,7 @@ class TrackerService : LifecycleService(){
                     Log.d("service_action","Service pause")
                 }
             else if(it.action == STOP_SERVICE_ACTION) {
+                serviceKill()
                 Log.d("service_action", "Service stop")
             }
             else{
@@ -115,27 +125,12 @@ class TrackerService : LifecycleService(){
 
         val notificationManager = getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager
 
-        val notificationBuilder = NotificationCompat.Builder(this, CHANNEL_ID)
-            .setAutoCancel(false) // Prevent the notification disappear when user touch it
-            .setOngoing(true) // Notification can be swiped
-            .setSmallIcon(R.drawable.ic_notifi_exercise) // Set notification icon
-            .setContentTitle("Tracking Application")
-            .setContentText("App is running")
-            .setContentIntent(getMainActivityPendingIntent())
-
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O){
             createNotificationChannel(notificationManager)
         }
 
-        startForeground(NOTIFICATION_ID, notificationBuilder.build())
+        startForeground(NOTIFICATION_ID, baseNotificationBuilder.build())
     }
-
-    private fun getMainActivityPendingIntent() = PendingIntent.getActivity(
-        this, 0,
-        Intent(this, MainActivity::class.java).also {
-            it.action = RUNNING_TRACKING_FRAGMENT},
-        FLAG_UPDATE_CURRENT
-    )
 
     // Method: give initial values
     private fun postInitialValues() {
@@ -226,4 +221,16 @@ class TrackerService : LifecycleService(){
             totalTime += lapTime
         }
     }
+
+    //Method: kill the service when user press cancel
+    private fun serviceKill(){
+        serviceKilled = true
+        fisrtRun = true
+        pauseService()
+        postInitialValues()
+        stopForeground(true)
+        stopSelf()
+    }
+
+
 }

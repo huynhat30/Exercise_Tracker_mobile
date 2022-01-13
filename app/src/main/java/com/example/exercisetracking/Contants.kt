@@ -11,4 +11,6 @@ object Contants {
     const val STOP_SERVICE_ACTION = "STOP_SERVICE_ACTION"
     const val RUNNING_TRACKING_FRAGMENT = "RUNNING_TRACKING_FRAGMENT"
     const val WALKING_TRACKING_FRAGMENT = "WALKING_TRACKING_FRAGMENT"
+
+    const val CHANNEL_ID = "tracking_channel"
 }

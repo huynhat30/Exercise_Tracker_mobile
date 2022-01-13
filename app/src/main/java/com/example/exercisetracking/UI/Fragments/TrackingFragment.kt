@@ -1,8 +1,15 @@
 package com.example.exercisetracking.UI.Fragments
 
+import android.content.Context
 import android.content.Intent
+import android.hardware.Sensor
+import android.hardware.SensorEvent
+import android.hardware.SensorEventListener
+import android.hardware.SensorManager
 import android.os.Bundle
 import android.view.View
+import android.content.Context.SENSOR_SERVICE
+import androidx.core.content.ContextCompat.getSystemService
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
@@ -15,10 +22,18 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_tracking_run.*
 
 @AndroidEntryPoint // inject request data from Database through Dagger Hilt into Fragment
-class TrackingFragment: Fragment(R.layout.fragment_tracking_walk ) {
+class TrackingFragment: Fragment(R.layout.fragment_tracking_walk ), SensorEventListener {
     private val viewModel : AppViewModel by viewModels()
 
     private var map: GoogleMap? = null
+    private var sensorHandle : SensorManager? = null
+    private var moving = false
+    private var totalStep = 0f
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -34,6 +49,7 @@ class TrackingFragment: Fragment(R.layout.fragment_tracking_walk ) {
 
     override fun onResume() {
         super.onResume()
+        moving = true
         mapView?.onResume()
     }
 
@@ -65,5 +81,13 @@ class TrackingFragment: Fragment(R.layout.fragment_tracking_walk ) {
     private fun commandToService(action:String) = Intent(requireContext(), TrackerService::class.java).also{
         it.action = action
         requireContext().startService(it)
+    }
+
+    override fun onSensorChanged(p0: SensorEvent?) {
+        TODO("Not yet implemented")
+    }
+
+    override fun onAccuracyChanged(p0: Sensor?, p1: Int) {
+        TODO("Not yet implemented")
     }
 }

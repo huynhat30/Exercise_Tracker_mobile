@@ -9,7 +9,6 @@ import androidx.room.PrimaryKey
 data class PhysActivity (
 
     //Define properties for the table
-
     var exerType: String, // Type of exercise been taken
     var img1: Bitmap? = null, //image of the latitude that user did exercises
     var dateRecord: Long = 0L, // The date taking the exercise
@@ -17,9 +16,7 @@ data class PhysActivity (
     var avgVelKMH: Float = 0f, // Average speed user had in the exercise
     var step: Int = 0, // Step in a walk
     var latitudeMeter: Int = 0, // The distance user took
-    var estCalor: Int = 0, // estimated calorie been burn in exercise
-    var img2: Bitmap? = null, // Optional taking moment image 1
-    var img3: Bitmap? = null // Optional taking moment image 2
+    var estCalor: Int = 0 // estimated calorie been burn in exercise
 ) {
     // Adding primary key for the table
     @PrimaryKey(autoGenerate = true)
